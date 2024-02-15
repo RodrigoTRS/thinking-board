@@ -1,0 +1,20 @@
+<section class="form-section">
+  <div class="form-container">
+    <h2 class="form-header ff-poppins">
+      What are you thinking about?
+    </h2>
+    <form>
+      <label class="ff-poppins" for="thinking"></label>
+      <textarea
+        class="thinking-input ff-poppins"
+        id="thinking"
+        name="thinking"
+        [(ngModel)]="thought.content"
+      ></textarea>
+      <div class="actions-container">
+        <button (click)="handleCreateNewThought()" class="create-button ff-poppins" type="submit">Send thoughts</button>
+        <button (click)="handleCancelNewThought()" class="cancel-button ff-poppins" type="submit">Cancel</button>
+      </div>
+    </form>
+  </div>
+</section>

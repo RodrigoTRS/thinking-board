@@ -1,0 +1,23 @@
+.footer-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 1px solid lightgray;
+}
+
+.footer-content {
+  max-width: 1120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px;
+}
+
+.footer-text {
+  font-size: small;
+  color: slategrey;
+}

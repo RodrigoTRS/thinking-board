@@ -1,0 +1,16 @@
+<div class="card">
+  <p class="ff-poppins">{{ thought.content }}</p>
+  <div class="action-container">
+    <span>
+      {{ thought.updatedAt.getDate() }}/{{ thought.updatedAt.getMonth() }}/{{ thought.updatedAt.getFullYear() }}
+    </span>
+    <div class="actions">
+      <button class="edit ff-poppins" routerLink="/update/{{thought.id}}" >
+        Edit
+      </button>
+      <button class="delete ff-poppins" routerLink="/exclude/{{thought.id}}">
+        Del.
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<section class="thoughts-section">
+  <div class="thoughts-container">
+
+    <button class="add-thought ff-poppins" routerLink="/create">
+      Add thought
+    </button>
+
+    <div class="cards-container" *ngIf="thoughts.length > 0, else noThoughts" >
+      <div *ngFor="let thought of thoughts">
+        <app-thoughts-card [thought]="thought"></app-thoughts-card>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<ng-template #noThoughts>
+  <div class="empty-list ff-poppins">
+    <p>No thoughts yet.</p>
+  </div>
+</ng-template>

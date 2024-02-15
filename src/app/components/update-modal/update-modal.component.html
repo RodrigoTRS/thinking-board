@@ -1,0 +1,22 @@
+<section class="update-container">
+  <div class="modal ff-poppins">
+    <form>
+      <label class="ff-poppins" for="update-input">Thought</label>
+      <textarea
+        class="update-input ff-poppins"
+        id="update-input"
+        name="update input"
+        [(ngModel)]="thought.content"
+      ></textarea>
+    <div class="actions">
+      <button (click)="handleUpdateThought()" class="update ff-poppins">
+        Update
+      </button>
+      <button (click)="handleCancelUpdateThought()" class="cancel ff-poppins">
+        Cancel
+      </button>
+    </div>
+    </form>
+  </div>
+  <div class="overlay"></div>
+</section>
